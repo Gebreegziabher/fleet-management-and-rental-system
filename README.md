@@ -26,40 +26,22 @@ Rentals can only be paid by creditcard.
 The Car rental system consist of 2 separate applications: 
 
 1. **Car fleet application** 
-* Contains the collection of cars with all car functionality described above. This functionality can be accessed through a REST interface. Write a REST client that calls the functionality of this application.
-* Uses a Mongo database 
+  * Contains the collection of cars with all car functionality described above. This functionality can be accessed through a REST interface. Write a REST client that calls the functionality of this application.
+  * Uses a Mongo database 
 2. **Car fleet application**
-* Contains all functionality that a customer needs in order to search and reserve a car. It also contains the functionality for the rental employee to handle car pickups and car returns. This
+  * Contains all functionality that a customer needs in order to search and reserve a car. It also contains the functionality for the rental employee to handle car pickups and car returns. This
 functionality can be accessed through a REST interface.
-* Uses a HSQLDB database
-- Use JPA for database access
-- Add logging (console and file) to this application at different logging levels.
-- This application should be monitored with Grafana.
-- Use scheduling so that the application prints every 20 seconds an overview of all cars
-including their state (rented out, available).
-- The following data can be configured in application.properties:
-o Maximum number of cars a customer can reserve.
-o The URL to the car fleet application
-- Use @ConfigurationProperties to read these properties
-- All domain logic is tested in unit tests
-- All queries in the repositories are tested.
-- Rental functionality is tested with RestAssured
-- Anytime a car is reserved, the car rental application sends a JMS message using ActiveMQ to
-the car fleet application. The car fleet keeps track of how many cars are available of a certain
-brand/type.
-- The car fleet application keeps the data of all cars. It is important that the car rental
-application always calls the car fleet application if it needs car data.
-- When there are less than 3 cars available of a certain brand/type combination, the system
-should send an email to the fleet manager (Do net send a real email, but use
-System.out.println()) 
+  * Uses a HSQLDB database, Use JPA for database access
+  * Uses logging (console and file) to at different logging levels. Logs are monitored with Grafana.
+  * Uses scheduling so that the application prints every 20 seconds an overview of all cars including their state (rented out, available).
+  * Uses JUnit and RestAssured for testing
+  * Anytime a car is reserved, the car rental application sends a JMS message using ActiveMQ to the car fleet application. The car fleet keeps track of how many cars are available of a certain brand/type.
 
 ## Technologies used
 
 * SpringBoot
-* Spring Webflux
-* Reactive mongo db
-* Spring kafka
-* Spring kafka streams
-* Angular
-
-![Architecture](https://github.com/Gebreegziabher/job-postings/assets/6954726/ef290f54-f040-47f3-a428-e1b99c78f856)
+* ActiveMQ
+* Mongo DB
+* Hsql BD
+* Spring Web
+![image](https://github.com/Gebreegziabher/fleet-management-and-rental-system/assets/6954726/593befc7-64c9-4610-9eac-8e2d2b73f8d9)
