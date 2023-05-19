@@ -5,23 +5,20 @@ This is a project of light-weight Spring Boot apps used to manage and maintain l
 ## Functionalities
 
 **Car functionality**
-* We can add, remove, update and find cars in the car rental application. You can search cars on car
-type, brand, price. We can have multiple cars of the same brand and type. For example we have 15
-Ford F1 Pickup trucks. Every individual car has a unique license plate.
-* The system keeps track of how many cars of a certain brand and type are available in the car fleet.
+ * We can add, remove, update and find cars in the car rental application. You can search cars on car type, brand, price. We can have multiple cars of the same brand and type. For example we have 15 Ford F1 Pickup trucks. Every individual car has a unique license plate.
+ * The system keeps track of how many cars of a certain brand and type are available in the car fleet.
 
 **Customer functionality**
-We can add, remove, update and find customers in the car rental application. You can search
-customers on customernumber, name and email address. Every customers has an unique
-customernumber.
+ * We can add, remove, update and find customers in the car rental application. 
+ * You can search customers on customernumber, name and email address. Every customers has an unique customernumber.
 
 **Reservation functionality**
-* A customer can reserve a certain car type for a certain period. 
-* Borrowing functionality.
-* A customer can pickup the car at the car renting location
-* A customer can return the car to the car renting location
-* The customer pays for the car when the car is returned.
-* Rentals can only be paid by creditcard. 
+ * A customer can reserve a certain car type for a certain period. 
+ * Borrowing functionality.
+ * A customer can pickup the car at the car renting location
+ * A customer can return the car to the car renting location
+ * The customer pays for the car when the car is returned.
+ * Rentals can only be paid by creditcard. 
 
 The system consist of 2 separate applications: 
 
