@@ -23,7 +23,7 @@ A customer can return the car to the car renting location
 The customer pays for the car when the car is returned.
 Rentals can only be paid by creditcard. 
 
-The car rental system consist of 2 separate applications: 
+The system consist of 2 separate applications: 
 
 1. **Car Fleet Application** 
   * Contains the collection of cars with all car functionality described above. This functionality can be accessed through a REST interface. Write a REST client that calls the functionality of this application.
