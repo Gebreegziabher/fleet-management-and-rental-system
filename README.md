@@ -1,4 +1,4 @@
-# Real-time Job Postings System
+# Car Fleet Management and Rental System
 
 This is a project of light-weight Spring Boot apps used to manage and maintain list of cars and allow customers to search, reserve and rent cars.
 
@@ -44,4 +44,5 @@ functionality can be accessed through a REST interface.
 * Mongo DB
 * Hsql BD
 * Spring Web
+
 ![image](https://github.com/Gebreegziabher/fleet-management-and-rental-system/assets/6954726/593befc7-64c9-4610-9eac-8e2d2b73f8d9)
