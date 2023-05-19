@@ -25,10 +25,10 @@ Rentals can only be paid by creditcard.
 
 The Car rental system consist of 2 separate applications: 
 
-1. **Car fleet application** 
+1. **Car Fleet Application** 
   * Contains the collection of cars with all car functionality described above. This functionality can be accessed through a REST interface. Write a REST client that calls the functionality of this application.
   * Uses a Mongo database 
-2. **Car fleet application**
+2. **Car Rental Application**
   * Contains all functionality that a customer needs in order to search and reserve a car. It also contains the functionality for the rental employee to handle car pickups and car returns. This
 functionality can be accessed through a REST interface.
   * Uses a HSQLDB database, Use JPA for database access
